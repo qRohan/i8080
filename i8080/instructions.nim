@@ -800,7 +800,7 @@ var ops = {
 
     0xD3'u8: # OUT d8
         Instruction((cpu: var CPU) => (cpu.port_out(cpu, cpu.popPC(), cpu.reg.A))),
-    0xDD'u8: # IN d8
+    0xDB'u8: # IN d8
         Instruction((cpu: var CPU) => (cpu.reg.A = cpu.port_in(cpu, cpu.popPC()))),
 
     0xF3'u8: # DI
